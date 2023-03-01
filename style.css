@@ -187,6 +187,7 @@ nav .wrapper {
 
 nav.scroll {
   background: var(--primary-color);
+  opacity: 0.8;
 }
 
 nav button {
@@ -339,9 +340,9 @@ body.menu-expanded button path {
   padding-block: 4rem;
   margin-inline: auto;
 
-  background-color: var(--brand-beige);
+  background-color: #FFDB5A;
   border: 1px solid var(--brand-light);
-  border-radius: 0.6rem;
+  border-radius: 0.8rem;
 
   display: flex;
   flex-direction: column;
@@ -351,7 +352,7 @@ body.menu-expanded button path {
 
 #home .stat h3 {
   font-size: 4.8rem;
-  color: var(--headline);
+  color: #577FAC;
   line-height: 130%;
 
   margin-bottom: 0.4rem;
@@ -359,11 +360,20 @@ body.menu-expanded button path {
 
 #home .stat p {
   margin: 0;
-  color: var(--primary-color);
+  color: black;
   font-size: 1.6rem;
   line-height: 150%;
 }
 
+
+@media screen and (max-width:900px)
+.carousel img{
+  width: calc(100% / 2);
+}
+@media screen and (max-width:550px)
+.carousel img{
+  width: 100%;
+}
 /*=== SERVICES =================================*/
 #services header h2 {
   margin-bottom: 6rem;
@@ -644,6 +654,58 @@ footer .social-links {
   #home {
     padding-top: var(--nav-height);
     
+  }
+
+  .wrapper .carousel{
+    white-space: nowrap;
+    cursor: pointer;
+    overflow: hidden;
+    scroll-behavior: smooth;
+  }
+
+  .carousel.dragging{
+    cursor: grab;
+    scroll-behavior: auto;
+  }
+  .carousel.dragging img{
+    pointer-events: none;
+  }
+
+  .wrapper{
+    max-width: 1200px;
+  }
+
+  .wrapper i{
+    top: 56%;
+    height: 36px;
+    width: 36px;
+    font-size: 1.2rem;
+    text-align: center;
+    line-height: 36px;
+    cursor: pointer;
+    position: absolute;
+    background: #FFDB5A;
+    border-radius: 50%;
+    transform: translateY(-50%);
+  }
+
+  .wrapper i:first-child{
+    left: 399px;
+    display: none;
+  }
+  .wrapper i:last-child{
+    right: 399px;
+  }
+
+  .carousel img{
+    height: 340px;
+    object-fit: cover;
+    margin-left: 14px;
+    width: calc(100% /3);
+  }
+
+  .carousel img:first-child{
+    margin-left: 0px;
   }
 
   #home::before {
