@@ -6,6 +6,10 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
     <link rel="shortcut icon" href="assets/logo_casaguntzel.fw.png" type="image/x-icon">
     <title>Casa Guntzel</title>
+    <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"/>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
 
     <link rel="stylesheet" href="./style.css" />
 
@@ -236,25 +240,34 @@
       <div class="wrapper">
         <header>
           <h4>Hospedagem</h4>
-          <h2>Nossas suítes</h2>
+          <h2>Confira algumas de nossas suítes</h2>
         </header>
-
-        
-
-              <div class="wrapper">
-                <i id="left" class="fa-solid fa-angle-left"></i>
-                <div class="carousel">
-                  <img href="https://i.imgur.com/q0mSPJI.jpg" alt="Foto da suíte" draggable="false">
-                  <img href="https://i.imgur.com/5fTG23a.jpg" alt="Foto da suíte" draggable="false">
-                  <img href="https://i.imgur.com/kcnR29l.jpg" alt="Foto da suíte" draggable="false">
-                  <img href="https://i.imgur.com/OEcmecO.jpg" alt="Foto da suíte" draggable="false">
-                  <img href="https://i.imgur.com/fYIpU9D.jpg" alt="Foto da suíte" draggable="false">
-                  <img href="https://i.imgur.com/Oh1vNhL.jpg" alt="Foto da suíte" draggable="false">
+        <span>SLIDER</span>
+        <div class="swiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="project-img">
+                  <img src="./assets/suite_01.JPG" alt="Foto 01">
                 </div>
-                <i id="right" class="fa-solid fa-angle-right"></i>
               </div>
-
+              <div class="swiper-slide">
+                <div class="project-img">
+                  <img src="./assets/suite_02.JPG" alt="Foto 02">
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="project-img">
+                  <img src="./assets/sute_03.JPG" alt="Foto 03">
+                </div>
+              </div>
             </div>
+          
+          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-pagination"></div>
+        </div>
+          
+        </div>
           </div>
         </div>
       </div>
@@ -480,6 +493,7 @@
     </a>
 
     <!-- ScrollReaveal Lib -->
+    <sript src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></sript>
     <script src="https://unpkg.com/scrollreveal"></script>
     <script src="./main.js"></script>
   </body>
